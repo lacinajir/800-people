@@ -1,6 +1,12 @@
 var entry = document.getElementById("entry");
 entry.addEventListener("click", displayDetails);
 
+document.getElementById('name').onkeydown = function(event) {
+    if (event.keyCode == 13) {
+        displayDetails();
+    }
+}
+
 var row = 1;
 
 nameCount = 0;
