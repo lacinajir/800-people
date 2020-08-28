@@ -13,59 +13,63 @@ html {
 h1 {
 	
 	font-weight: bold;
-	margin-top: 40px;
-	color: darkblue;
-	
+	padding-top: 70px;
+	padding-bottom: 70px;
+	color: white;
+	background: linear-gradient(to bottom right, #2bb4d0, #002db3);
+
 }
 
-p {
-	margin-top:30px;
-	font-size: 16px;
+#intro {
+	line-height: 1,9;
+	padding-left: 5px;
+	padding-right: 5px;	
+	padding-top: 30px;
+	font-size: 17px;
 }
 
 #insertCount {
-	margin-top:50px;
+	margin-top: 30px;
 	font-weight: bold;
+	font-size: 20px;
 }
 
-#nameDiv {
+#inputForm {
 	
-	margin-top: 50px;
-	font-size: 16px;
-
-}
-
-.input {
-	font-size: 16px;
+	margin-top: 30px;
+	font-size: 17px;
 	color: #000000;
+
 }
 
-#entry {
+#author {
+	font-size: 12px;
+}
+
+#TwitterButton {
+	margin-top: 10px;
+}
+
+#entryButton {
 	margin-top: 15px;
 	width: 150px;
 	height: 40px;
 	font-size: 20px;
-	color: black;
-	background-color: white;
+	color: white;
+	background-color: #002db3;
+	text-align: center;
+	border: none;
+	border-radius: 2px;
 }
 
 table {
 	border-collapse: collapse;
 	width: 50%;
-	margin: 50px auto;
+	margin: 30px auto;
 	background-color: white;
 }
 
 table, th, td {
-	border: 2px solid black;
 	padding: 5px;
-}
-
-th {
-	font-size: 16px;
-	font-weight: bold;
-}
-
-td {
 	font-size: 16px;
 }
