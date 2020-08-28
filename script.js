@@ -1,5 +1,6 @@
-var entry = document.getElementById("entry");
+var entry = document.getElementById("entryButton");
 entry.addEventListener("click", displayDetails);
+
 
 document.getElementById('name').onkeydown = function(event) {
     if (event.keyCode == 13) {
@@ -30,7 +31,7 @@ function displayDetails() {
 	nameCount++;
 	
 	document.getElementById("insertCount").innerHTML = "Your name count: " + nameCount;
-	
+		
 	row++;
 
 }
