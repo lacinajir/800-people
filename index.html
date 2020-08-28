@@ -10,29 +10,40 @@
 </head>
 
 <body>
+	
 	<h1>Do You Know 800 People?</h1>
-	<p>We encounter many people in our lives, real or fictional, as children or adults, in school or video games. I bet you could name 800 of them. <br> Don't believe me? Try it right here!</p>
 	
-	<!-- Code to get a name and display it in a table-->
+	<div id="intro">
+		<p>We encounter many people in our lives, real or fictional, as children or adults, in school or video games. <br> 
+		I bet you could name 800 of them. <br> Don't believe me? Try it right here!</p>
+	</div>
 	
+		<!-- Code to get a name and display it in a table-->
 	<div id="container">
-		<div id="nameDiv" class="input">Name: <input id="name" type="text" onfocus="this.value=''" /></div>
+		<div id="inputForm" class="input">Name: <input id="name" type="text" onfocus="this.value=''" /></div>
 		
-		<button id="entry">Enter</button>
+		<button id="entryButton">Enter</button>
 	</div>
 	
 	<p id="insertCount"></p>
 	
+	<!--
+	<div id="TwitterButton">
+	<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" 
+	data-text="How many people do you know?" data-hashtags="800people" data-lang="en" dnt="true" 
+	data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	</div>
+	-->
+	
 	<table id="display">
 		<tr>
-			<th>Name</th>
 		</tr>
 	</table>
 
 	<script src="script.js"></script>
 	
-	 <footer>
-		 <p>Author: Jiří Lacina <br><a href="mailto:lacina@protonmail.com" style="color:black">lacina@protonmail.com</a></p>
+	 <footer id="author">
+		 <p>This website requires JavaScript to run.<br>It does not collect any user data or store cookies.<br><br>Author: Jiří Lacina <br><a href="mailto:lacina@protonmail.com" style="color:black">lacina@protonmail.com</a><br><br><a href="https://github.com/lacinajir/800-people" style="color:black">Source</a></p>
 	</footer> 
 	
 </body>
