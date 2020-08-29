@@ -8,11 +8,14 @@ document.getElementById('name').onkeydown = function(event) {
     }
 }
 
+document.getElementById("tableScroll").style.display = 'none';
+
 var row = 1;
 
 nameCount = 0;
 
 function displayDetails() {
+
 	var name = document.getElementById("name").value;
 	
 	if(!name) {
@@ -30,8 +33,18 @@ function displayDetails() {
 	
 	nameCount++;
 	
-	document.getElementById("insertCount").innerHTML = "Your name count: " + nameCount;
-		
+	document.getElementById("tableScroll").style.display = 'block';
+	
+	if (nameCount === 8) {
+		document.getElementById("insertCount").innerHTML = "Your name count: " + nameCount + " (1%, congrats!)";
+	}
+	else if (nameCount === 400) {
+		document.getElementById("insertCount").innerHTML = "Your name count: " + nameCount + " (Wow, you are halfway there!)";
+	}
+	else {
+		document.getElementById("insertCount").innerHTML = "Your name count: " + nameCount;
+	}
+	
 	row++;
 
 }
