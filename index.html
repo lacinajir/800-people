@@ -5,45 +5,57 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Do You Know 800 People?</title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
-	<meta name="description" content="Can you name 800 people – real or fictional, friends or foes?">
+	<meta name="description" content="We encounter many people in our lives, real or fictional, as children or adults, in school or video games. I bet you can name 800 of them.">
 	<meta name="author" content="Jiří Lacina">
 </head>
 
 <body>
 	
-	<h1>Do You Know 800 People?</h1>
+	<div id="upperScreen">
 	
-	<div id="intro">
-		<p>We encounter many people in our lives, real or fictional, as children or adults, in school or video games. <br> 
-		I bet you could name 800 of them. <br> Don't believe me? Try it right here!</p>
-	</div>
-	
-		<!-- Code to get a name and display it in a table-->
-	<div id="container">
-		<div id="inputForm" class="input">Name: <input id="name" type="text" onfocus="this.value=''" /></div>
+		<h1>Do You Know 800 People?</h1>
 		
-		<button id="entryButton">Enter</button>
+		<div id="intro">
+			<p>We encounter many people in our lives, real or fictional, as children or adults, in school or video games.</p>
+			
+			<p>I bet you can name 800 of them.</p>
+			
+			<p>Don't believe me? Try it right here!</p>
+		</div>
+		
+			<!-- Code to get a name and display it in a table-->
+		<div id="container">
+			<div id="inputForm" class="input"><input id="name" type="text" onfocus="this.value=''" /></div>
+			
+			<button id="entryButton">Enter</button>
+		</div>
+		
+		<p id="insertCount"></p>
+		
+		<!--
+		<div id="TwitterButton">
+		<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" 
+		data-text="How many people do you know?" data-hashtags="800people" data-lang="en" dnt="true" 
+		data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		</div>
+		-->
+	
 	</div>
 	
-	<p id="insertCount"></p>
-	
-	<!--
-	<div id="TwitterButton">
-	<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" 
-	data-text="How many people do you know?" data-hashtags="800people" data-lang="en" dnt="true" 
-	data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<div id="tableScroll">
+		<table id="display">
+			<th>Name list:</th>
+			<tr>
+			</tr>
+		</table>
 	</div>
-	-->
-	
-	<table id="display">
-		<tr>
-		</tr>
-	</table>
 
 	<script src="script.js"></script>
 	
-	 <footer id="author">
-		 <p>This website requires JavaScript to run.<br>It does not collect any user data or store cookies.<br><br>Author: Jiří Lacina <br><a href="mailto:lacina@protonmail.com" style="color:black">lacina@protonmail.com</a><br><br><a href="https://github.com/lacinajir/800-people" style="color:black">Source</a></p>
+	<footer id="author">
+		 <p>This website requires JavaScript to run.<br>It does not collect user data or store cookies.</p>
+		 <p>Author: Jiří Lacina <br><a href="mailto:lacina@protonmail.com">lacina@protonmail.com</a></p>
+		 <p><a href="https://github.com/lacinajir/800-people">Source</a></p>
 	</footer> 
 	
 </body>
