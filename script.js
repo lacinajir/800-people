@@ -1,18 +1,19 @@
 var entry = document.getElementById("entryButton");
 entry.addEventListener("click", displayDetails);
 
-
 document.getElementById('name').onkeydown = function(event) {
     if (event.keyCode == 13) {
         displayDetails();
     }
 }
 
-document.getElementById("tableScroll").style.display = 'none';
+document.getElementById("divTB").style.display = 'none';
 
 var row = 1;
 
 nameCount = 0;
+
+document.getElementById("insertCount").innerHTML = "Your name count: " + nameCount;
 
 function displayDetails() {
 
@@ -33,18 +34,23 @@ function displayDetails() {
 	
 	nameCount++;
 	
-	document.getElementById("tableScroll").style.display = 'block';
-	
-	if (nameCount === 8) {
-		document.getElementById("insertCount").innerHTML = "Your name count: " + nameCount + " (1%, congrats!)";
-	}
-	else if (nameCount === 400) {
-		document.getElementById("insertCount").innerHTML = "Your name count: " + nameCount + " (Wow, you are halfway there!)";
-	}
-	else {
-		document.getElementById("insertCount").innerHTML = "Your name count: " + nameCount;
-	}
-	
+	document.getElementById("divTB").style.display = 'block';
+		
 	row++;
+	
+	document.getElementById("insertCount").innerHTML = "Your name count: " + nameCount;
+}
 
+function removeRow() {
+	
+	document.getElementById("display").deleteRow(-1);
+	
+	nameCount--;
+	
+	document.getElementById("insertCount").innerHTML = "Your name count: " + nameCount;
+	
+	if (nameCount === 0) {
+		document.getElementById("divTB").style.display = 'none';
+		location.reload();
+	}
 }
