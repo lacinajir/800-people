@@ -1,9 +1,9 @@
 var entry = document.getElementById("entryButton");
-entry.addEventListener("click", displayDetails);
+entry.addEventListener("click", displayName);
 
 document.getElementById('name').onkeydown = function(event) {
     if (event.keyCode == 13) {
-        displayDetails();
+        displayName();
     }
 }
 
@@ -15,7 +15,7 @@ nameCount = 0;
 
 document.getElementById("insertCount").innerHTML = "Your name count: " + nameCount;
 
-function displayDetails() {
+function displayName() {
 
 	var name = document.getElementById("name").value;
 	
@@ -39,6 +39,7 @@ function displayDetails() {
 	row++;
 	
 	document.getElementById("insertCount").innerHTML = "Your name count: " + nameCount;
+	
 }
 
 function removeRow() {
@@ -47,10 +48,12 @@ function removeRow() {
 	
 	nameCount--;
 	
+	row--;
+	
 	document.getElementById("insertCount").innerHTML = "Your name count: " + nameCount;
 	
 	if (nameCount === 0) {
 		document.getElementById("divTB").style.display = 'none';
-		location.reload();
 	}
+
 }
