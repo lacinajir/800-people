@@ -67,6 +67,12 @@ button {
 	margin-bottom: 40px;
 }
 
+#removeButton {
+	margin-top: 40px;
+	margin-bottom: 20px;
+	font-size: 15px;
+}
+
 #entryButton:hover {
 	color: #001a66;
 	background-color: white;
@@ -86,9 +92,9 @@ button {
 
 #tableScroll {
 	background-color: white;
-	height:300px;
+	height:200px;
 	overflow:auto;
-	margin: 30px auto 50px;
+	margin: 0px auto 50px;
 	width: 50%;
 }
 
