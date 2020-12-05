@@ -74,8 +74,8 @@ button {
 }
 
 button:hover {
-	color: #001a66;
-	background-color: white;
+	color: #0039e6;
+	text-decoration: underline;
 }
 
 #insertCount {
